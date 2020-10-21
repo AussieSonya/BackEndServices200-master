@@ -19,7 +19,8 @@ services:
           depends_on:
             - zookeeper
     sql:
-        image: sonyawilde/library-sql-oct2020
+      #  image: sonyawilde/library-sql-oct2020:final
+        image: jeffrygonzalez/library-sql-oct2020:final
         ports:
             - 1433:1433
     redis:
